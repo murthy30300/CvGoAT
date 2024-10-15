@@ -1,6 +1,6 @@
 import { useState } from "react";
 import axios from "axios";
-import '../CSS/Gemini.css'
+import '../CSS/Home.css'
 
 export default function Home({ setExtractedText, setRole }) {
   const [file, setFile] = useState(null);
