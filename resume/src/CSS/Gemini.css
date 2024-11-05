@@ -1,11 +1,10 @@
 /* Gemini.css */
-
 .extracted-text {
     background-color: #f9f9f9;
     padding: 10px;
     border: 1px solid #ccc;
     border-radius: 5px;
-    white-space: pre-wrap; /* Ensures whitespace is preserved */
+    white-space: pre-wrap; 
 }
 
 .analysis-container {
@@ -14,4 +13,5 @@
     background-color: #eef;
     border-radius: 5px;
     border: 1px solid #88f;
-}
+ }
+ 

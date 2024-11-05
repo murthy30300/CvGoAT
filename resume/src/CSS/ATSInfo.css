@@ -1,0 +1,137 @@
+.ats-container {
+  font-family: Arial, sans-serif;
+  background: linear-gradient(to right, #9170d8, #ede8dc);
+  color: #444;
+  padding: 2rem;
+  max-width: 800px;
+  margin: auto;
+  text-align: center;
+  border-radius: 8px;
+  box-shadow: 0 6px 10px rgba(0, 0, 0, 0.15);
+  animation: fadeIn 1.2s ease-in-out;
+}
+
+.ats-title {
+  font-size: 3rem;
+  font-weight: 700;
+  color: #4a2a98; /* Darker shade for more contrast */
+  text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.2);
+  animation: slideDown 0.8s ease-in;
+  margin-bottom: 0.5rem;
+}
+
+.ats-subtitle {
+  font-size: 1.1rem;
+  color: #6b5c85; /* Softer shade */
+  margin-bottom: 1.5rem;
+}
+
+.ats-section {
+  background-color: #f0f0f0;
+  padding: 1.5rem;
+  margin: 1rem 0;
+  border-radius: 5px;
+  animation: fadeIn 1s ease-in;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.ats-content h2 {
+  color: #4257c1;
+}
+
+.ats-content p {
+  font-size: 1rem;
+  line-height: 1.6;
+  color: #5a5a5a;
+}
+
+.ats-tips h2 {
+  margin-top: 2rem;
+  color: #6f42c1;
+}
+
+.ats-tips ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.ats-tips li {
+  background-color: #c17c42;
+  color: #fff;
+  margin: 0.5rem 0;
+  padding: 0.7rem;
+  border-radius: 4px;
+  transition: background-color 0.3s ease;
+}
+
+.ats-tips li:hover {
+  background-color: #9170d8;
+  color: #ffffff;
+}
+
+.cta-button {
+  background-color: #6fc142;
+  color: #fff;
+  border: none;
+  padding: 1rem 1.5rem;
+  margin-top: 1.5rem;
+  font-size: 1rem;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+}
+
+.cta-button:hover {
+  background-color: #5b36a0;
+  color: #fff;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+@keyframes slideDown {
+  from { transform: translateY(-30px); opacity: 0; }
+  to { transform: translateY(0); opacity: 1; }
+}
+
+  /*
+  Primary Color (Base):
+
+RGB: rgb(111, 66, 193)
+HEX: #6f42c1
+Light Primary (Lighter shade of primary):
+
+RGB: rgb(145, 112, 216)
+HEX: #9170d8
+Dark Primary (Darker shade of primary):
+
+RGB: rgb(91, 54, 158)
+HEX: #5b36a0
+Complementary Color:
+
+RGB: rgb(193, 124, 66)
+HEX: #c17c42
+Analogous Color 1 (Purple-Pink):
+
+RGB: rgb(172, 66, 193)
+HEX: #ac42c1
+Analogous Color 2 (Blue-Purple):
+
+RGB: rgb(66, 87, 193)
+HEX: #4257c1
+Accent Color (Soft Contrast):
+
+RGB: rgb(111, 193, 66)
+HEX: #6fc142
+Neutral Background (Soft Gray):
+
+RGB: rgb(240, 240, 240)
+HEX: #f0f0f0
+Highlight Color (Soft Yellow):
+
+RGB: rgb(248, 232, 156)
+HEX: #f8e89c
+  */

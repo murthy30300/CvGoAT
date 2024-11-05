@@ -19,6 +19,7 @@
     "react-bootstrap": "^2.10.5",
     "react-bootstrap-dropdown": "^0.3.0",
     "react-dom": "^18.3.1",
+    "react-pdf": "^9.1.1",
     "react-router-dom": "^6.27.0"
   },
   "devDependencies": {

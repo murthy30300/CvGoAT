@@ -3,7 +3,9 @@ body {
     margin: 0;
     padding: 0;
 }
-
+*{
+    text-decoration: none;
+}
 .nav {
     display: flex;
     justify-content: space-between;
@@ -17,6 +19,7 @@ body {
     font-size: 24px;
     color: #333;
     margin: 0;
+    text-decoration: none;
 }
 
 .right {
@@ -24,7 +27,6 @@ body {
     align-items: center;
     gap: 30px; /* Increased gap for better spacing between elements */
 }
-
 .dropdown {
     position: relative;
     cursor: pointer;
@@ -35,57 +37,75 @@ body {
     border: 0px solid #ccc;
     padding: 10px 20px;
     font-size: 16px;
+    color: #333;
     cursor: pointer;
     display: flex;
-    align-items: center; /* To align text and SVG */
+    align-items: center;
     justify-content: space-between;
-    width: 130px; /* Adjust as needed */
-    border-radius: 5px; /* Optional: Rounded corners */
+    width: 130px;
+    border-radius: 5px;
 }
 
 .dropdown-arrow {
     margin-left: 5px;
+    transition: transform 0.3s ease; /* Smooth rotation */
 }
 
 .dropdown-menu {
     background-color: white;
-    border: 1px solid white;
+    border: 1px solid #ccc;
     position: absolute;
     border-radius: 20px;
     width: 50vh;
-    top: 100%; /* Position below the button */
+    top: 100%;
     left: 0;
     margin-top: 5px;
     list-style: none;
     padding: 0;
-    display: none; /* Hidden by default */
-    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); /* Add shadow */
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.3s ease, visibility 0.3s ease;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
 }
 
+/* Show dropdown menu on hover with a delay */
 .dropdown:hover .dropdown-menu {
     display: block;
+    opacity: 1;
+    visibility: visible;
 }
 
+/* Ensure dropdown stays visible after clicking */
+.dropdown:focus-within .dropdown-menu,
+.dropdown:hover .dropdown-menu {
+    opacity: 1;
+    visibility: visible;
+}
+
+/* Dropdown items styling */
 .dropdown-item {
     padding: 10px 15px;
     font-size: 14px;
-    color: #1c0a0a;
+    color: #6a2ee1;
     text-decoration: none;
     display: block;
-    transition: background-color 0.3s ease, color 0.3s ease;
+    transition: background-color 0.3s ease;
 }
+
 .dropdown-item:hover {
-    background-color:rgb(111, 66, 193);
-    color: #eee2f3; /* Change text color on hover */
+    background-color: rgb(111, 66, 193);
+    color: #eee2f3;
 }
 
 /* Rotate arrow when dropdown is open */
-.dropdown:hover .dropdown-arrow {
+.dropdown:hover .dropdown-arrow,
+.dropdown:focus-within .dropdown-arrow {
     transform: rotate(180deg);
 }
+
 .dropdown-item a {
-    color: inherit; /* Use the inherited color */
-    text-decoration: none; /* Remove underline */
+    color: inherit;
+    text-decoration: none;
 }
 
 .signin {

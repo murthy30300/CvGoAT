@@ -5,13 +5,8 @@ import image2 from '../assets/images/image2.jpg';
 import image3 from '../assets/images/image3.jpg';
 import image4 from '../assets/images/image4.jpg';
 import banner from '../assets/images/banner.jpg';
-import { Link } from 'react-router-dom';
-
-
 const ResumeHome = () => {
-    const [hoveredTabIndex, setHoveredTabIndex] = useState(null);
-    const [hoveredTabWidth, setHoveredTabWidth] = useState(0);
-
+ 
     const tabs = [
         { id: 1, name: "AI writer", image: image1, targetDiv: "div1" },
         { id: 2, name: "Resume builder", image: image2, targetDiv: "div2" },
@@ -48,42 +43,9 @@ const ResumeHome = () => {
 
     return (
         <>
+        
             <div className='app-container'>
-                {/* Navigation Bar */}
-                <div className="nav">
-                    <div className="heading">
-                        <h1>Murthy's CVGoAT</h1>
-                    </div>
-                    <div className="right">
-                        <div className="dropdown">
-                            <button className="dropdown-toggle">
-                                Resumes
-                                <svg className="dropdown-arrow" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="16" height="16">
-                                    <path d="M7 10l5 5 5-5z" />
-                                </svg>
-                            </button>
-                            <ul className="dropdown-menu">
-                                <li className="dropdown-item">
-                                <Link to="/gemini">Resume Builder</Link>
-                                    
-                                </li>
-                                <li className="dropdown-item">
-                                    <a href="#/action-2">Resume Samples</a>
-                                </li>
-                                <li className="dropdown-item">
-                                    <a href="#/action-3">Why ATS Resume</a>
-                                </li>
-                            </ul>
-                        </div>
-                        <div className="signin">
-                            Sign In
-                        </div>
-                        <div className="getStarted">
-                            Get Started
-                        </div>
-                    </div>
-                </div>
-
+           
                 {/* Main Content */}
                 <div className="main">
                     <div className="head1">
@@ -107,24 +69,7 @@ const ResumeHome = () => {
                 {/* Tab Navigation */}
                 <div className="App">
                     <div className="navbar">
-                        {/* <ul className="tab-list">
-                        {tabs.map((tab) => (
-                            <li
-                                key={tab.id}
-                                className={selectedTab.id === tab.id ? "active-tab" : ""}
-                                onClick={() => handleTabClick(tab)}
-                            >
-                                {tab.name}
-                            </li>
-                        ))}
-                        <div
-                            className="tab-slider"
-                            style={{
-                                left: `${tabs.findIndex(tab => tab.id === selectedTab.id) * 120}px`,
-                                width:`${selectedTab.name.length * 10}px`,  // Adjust width if necessary
-                            }}
-                        />
-                    </ul> */}
+                    
                         <ul className="tab-list">
                             {tabs.map((tab, index) => (
                                 <li

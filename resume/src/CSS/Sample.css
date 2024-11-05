@@ -1,0 +1,148 @@
+.sample-page {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    padding: 20px;
+    max-width: 800px;
+    margin: auto;
+  }
+  
+  .sample-title {
+    font-size: 2rem;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 10px;
+  }
+  
+  .author-info {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 20px;
+    color: #666;
+  }
+  
+  .author-image {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    margin-right: 10px;
+  }
+  
+  .updated-date {
+    margin-left: 10px;
+    color: #999;
+  }
+  
+  .sample-description {
+    font-size: 1.1rem;
+    color: #555;
+    margin-bottom: 20px;
+  }
+  
+  .buttons-container {
+    margin: 20px 0;
+  }
+  
+  .start-button, .import-button {
+    padding: 10px 20px;
+    font-size: 1rem;
+    border: none;
+    cursor: pointer;
+    margin: 5px;
+    border-radius: 5px;
+  }
+  
+  .start-button {
+    background-color: rgba(111, 66, 193, 0.8);; /* Gradient color for button */
+    color: white;
+  }
+  
+  .import-button {
+    background-color: white;
+    color: rgba(111, 66, 193, 0.8);
+    border: 2px solid rgba(111, 66, 193, 0.8);
+  }
+  
+  .resume-images {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin: 20px 0;
+  }
+  
+  .resume-image {
+    width: 100px;
+    height: 140px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+  }
+  
+  .trust-info {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+    margin-top: 20px;
+    font-size: 0.9rem;
+    color: #777;
+  }
+  
+  .trust-rating {
+    font-weight: bold;
+    color: #4CAF50;
+  }
+  
+  .trust-stars {
+    color: gold;
+  }
+  
+  .subscriber-info {
+    font-size: 0.9rem;
+    color: #555;
+    margin-top: 20px;
+  }
+  /* Container for the scrolling logos */
+.logo-list {
+    overflow: hidden;
+    margin-top: 20px;
+    width: 100%;
+    max-width: 800px;
+    margin: auto;
+    padding: 10px 0;
+    animation-play-state: running;
+  }
+  
+  .company-logos {
+    display: flex;
+    gap: 15px;
+    animation: scroll 15s linear infinite;
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  .company-logos li {
+    display: flex;
+    align-items: center;
+  }
+  
+  .company-logos img {
+    width: 80px;
+    height: auto;
+    opacity: 0.7;
+    transition: opacity 0.2s;
+  }
+  
+  .company-logos img:hover {
+    opacity: 1;
+  }
+  
+  /* Infinite scroll animation */
+  @keyframes scroll {
+    0% {
+      transform: translateX(0);
+    }
+    100% {
+      transform: translateX(-100%);
+    }
+  }
+  

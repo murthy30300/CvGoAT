@@ -5,7 +5,7 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    height: 300px; /* Adjust height as needed */
+    height: 300px;
     padding: 20px;
     border-radius: 10px;
     border: 2px dashed #555;
@@ -29,51 +29,48 @@
     font-weight: bold;
     text-align: center;
     transition: color .2s ease-in-out;
-    margin-bottom: 10px; /* Space between title and inputs */
+    margin-bottom: 10px;
   }
   
-  /* Styles for the SVG icons */
+
   .icon {
-    width: 48px; /* Icon size */
-    height: 48px; /* Icon size */
-    margin: 10px; /* Space around icons */
+    width: 48px; 
+    height: 48px;
+    margin: 10px; 
   }
   
-  /* Styles for the file input */
+
   input[type="file"] {
-    margin: 10px 0; /* Space between inputs */
-    padding: 10px; /* Padding for input */
-    border: none; /* Remove default border */
-    width: 100%; /* Full width */
-    cursor: pointer; /* Change cursor on hover */
+    margin: 10px 0;
+    padding: 10px;
+    border: none; 
+    width: 100%; 
+    cursor: pointer; 
   }
   
-  /* Styles for the text input */
+ 
   input[type="text"] {
-    margin: 10px 0; /* Space between inputs */
-    padding: 10px; /* Padding for input */
-    border: 1px solid #ccc; /* Light border */
-    border-radius: 5px; /* Rounded corners */
-    font-size: 14px; /* Font size */
-    width: 60%; /* Full width */
+    margin: 10px 0;
+    padding: 10px; 
+    border: 1px solid #ccc; 
+    border-radius: 5px;
+    font-size: 14px;
+    width: 60%; 
     height: 50%;
   }
   
-  /* Styles for the button */
-  button {
-    padding: 10px; /* Padding for button */
-    border: none; /* Remove default border */
-    border-radius: 5px; /* Rounded corners */
-    background-color: rgba(111, 66, 193, 0.8);/* Primary color */
-    color: white; /* Text color */
-    font-size: 16px; /* Font size */
-    cursor: pointer; /* Change cursor on hover */
-    transition: background-color 0.3s; /* Smooth transition */
-    width: 60%; /* Full width */
-  }
   
-  /* Hover effect for the button */
-  button:hover {
-    background-color: #0056b3; /* Darker shade on hover */
+  button {
+    padding: 10px;
+    border: none; 
+    border-radius: 5px; 
+    background-color: rgba(111, 66, 193, 0.8);
+    color: white; 
+    font-size: 16px;
+    cursor: pointer; 
+    transition: background-color 0.3s;
+    width: 60%; 
   }
+
+
   

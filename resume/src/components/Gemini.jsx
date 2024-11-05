@@ -13,7 +13,8 @@ function Gemini() {
   const analyzeResume = async (text) => {
     setLoading(true);
     try {
-      const response = await axios.post("http://localhost:5000/analyze", { text, role });
+       const response = await axios.post("http://localhost:5000/analyze", { text, role });
+      //const response = await axios.post("https://cdgxc4fp7b.execute-api.us-east-1.amazonaws.com/prod/analyze", { text, role });
       setAnalysis(response.data.analysis);
       // setSuggestions(response.data.suggestions);
     } catch (error) {
